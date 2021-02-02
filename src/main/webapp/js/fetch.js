@@ -46,7 +46,7 @@ applyBtn.addEventListener('click', async function () {
                 if (response.ok && pixSize > 0) {
                     const json = await response.json();
                     imgOut.setAttribute("src", "data:image/png;base64," + json.imageForOutput);
-                    alert("Pixelization done")
+                    //alert("Pixelization done")
                 }
             } catch (error) {
                 console.error('Ya ebu', error);
